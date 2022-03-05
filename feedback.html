@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> <!-- set UTF-8 character set -->
+    <!-- Title bar text -->
+    <title>
+        福 | Feedback
+    </title>
+    <!-- slug line (-ish) -->
+    <meta name="description" content="福 TOWN combines a variety of Chinese cuisine to excite and delight our customers.">
+    <meta name="keywords" content="Chinese Cuisine, food, menus, 福 Town, town, Examplopolis, restaurant">
+    <!-- set width = device width and default scale to 1 (= 100%) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar with logo and menu -->
+    <div class="sidebar">
+        <img src="images/Logos/LogoFireStarter.png" alt="Town Chinese" width="350" height="140">
+        <a href="index.html">Home</a>
+        <a href="mission.html"><i class="fa fa-bullseye"></i>Mission and Vision</a>
+        <a href="menu.html"><i class="fa fa-eye"></i>Menu</a>
+        <div class="current-page">
+            <a href="feedback.html"><i class="fa fa-envelope"></i>Feedback</a>
+        </div>
+        <hr />
+        <div class="contact">
+            <p>123, Example Street,<br />Chinatown,<br />Columbia</p>
+            <p>
+            Order now: 123-456-7890
+            </p>
+            <a href="mailto:townchinese@example.com">townchinese@example.com</a>
+        </div>
+    </div>
+    
+    <div class="slideshow-container">
+        <div class="bg-img fade">
+            <img src="images/Decorative/ChineseFeedback.jpg" style="width:100%" alt="福 | Town Chinese | Feedback">
+        </div>
+        <div class="centre">
+            <div class="form">
+                <h1>Submit a Review</h1>
+                <form method="get" id="feedback-form">
+                    <fieldset>
+                        <legend align="center">Contact Details</legend>
+                        <label>
+                            Name:
+                            <input type="text" name="name" size="50" maxlength="100">
+                        </label>
+                        <br />
+                        <label>
+                            Email:
+                            <input type="email" name="email" size="50" maxlength="100">
+                        </label>
+                        <br />
+                    </fieldset>
+                    <br />
+                    <fieldset>
+                        <legend align="center">Feedback</legend>
+                        <p>
+                            <label for="hear-about">How did you hear about us?</label>
+                            <select name="referrer" id="hear-about">
+                                <option value="google">Google</option>
+                                <option value="friends">Friends</option>
+                                <option value="ad">Ad</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </p>
+                        <p>Would you recommend Town Chinese?
+                            <label>
+                                <input type="radio" name="recommend" value="yes" />
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="recommend" value="no" />
+                                No
+                            </label>
+                        </p>
+                        <p>
+                            <label for="review">Your review:</label>
+                            <br />
+                            <textarea rows="5" cols="70" id="review" placeholder="Enter your review here. Please specify 'other' if selected above."></textarea>
+                        </p>
+                        <label>
+                            <input type="checkbox" name="share" checked="checked" />
+                            Share my review on the website
+                        </label>
+                        <br /><br />
+                        <button type="submit" form="feedback-form" value="Submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
